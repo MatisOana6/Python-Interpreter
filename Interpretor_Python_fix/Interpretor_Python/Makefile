@@ -6,7 +6,3 @@ lex.yy.c: interpreter.l
 
 y.tab.c y.tab.h: interpreter.y
 	yacc -d -v -t $<
-
-clean:
-	rm -f lex.yy.c y.tab.c y.tab.h interpreter
-
